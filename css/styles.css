@@ -107,6 +107,19 @@ img {
   display: block;
   padding: 24px 0;
   position: relative;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list-active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 .nav-list:hover,
 .nav-list:focus {
@@ -135,6 +148,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -299,6 +313,7 @@ img {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 8px;
 
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -306,8 +321,12 @@ img {
 }
 
 .container-socials {
-  margin-top: 8px;
-  margin-bottom: 32px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .socials-item {
@@ -321,16 +340,26 @@ img {
 }
 
 .socials-item-list {
+}
+.social-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
   width: 40px;
   height: 40px;
-  border-radius: 40px;
-  background-color: #4d5ae5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-icons {
-  margin: 12px;
-  fill: #f4f4fd;
+.social-item-link:hover,
+.social-item-link:focus {
+  background-color: #404bbf;
 }
+
 /* #endregion Team 3*/
 
 /* #region Portfolio 4*/
