@@ -1,0 +1,399 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #434455;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.features,
+.team,
+.portfolio {
+  padding: 60px 0;
+}
+
+/* #region Header */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.nav {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.nav-web {
+  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.nav-studio {
+  color: #2e2f42;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.nav-list {
+  display: block;
+  padding: 24px 0;
+}
+.nav-list:hover,
+.nav-list:focus {
+  color: #404bbf;
+}
+
+.list-item {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+.address {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-link {
+  padding: 24px 0;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+/* #endregion Header */
+
+/* #region Main */
+
+/* #region Heroimage 1*/
+
+.heroimage {
+  background: #2e2f42;
+  padding: 188px 0;
+}
+
+.heroimage .container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.heroimage-title {
+  max-width: 496px;
+  width: 496px;
+  margin-bottom: 48px;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+}
+
+.heroimage-button {
+  display: block;
+  padding: 16px 32px;
+  margin: 0 auto;
+  min-width: 169px;
+  min-height: 56px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border-style: none;
+  border-radius: 4px;
+  background: #4d5ae5;
+  cursor: pointer;
+}
+
+.heroimage-button:hover,
+.heroimage-button:active,
+.heroimage-button:focus {
+  background: #404bbf;
+}
+/* #endregion Heroimage 1*/
+
+/* #region Features 2*/
+
+.features {
+  padding: 120px 0;
+}
+.features-title {
+}
+
+.features-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.features-items-list {
+  width: 264px;
+}
+.features-items-title {
+  display: flex;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.features-items-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* #endregion Features 2*/
+
+/* #region Team 3*/
+
+.team {
+  padding: 120px 0;
+}
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-title {
+  margin-bottom: 72px;
+
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.container-team-list {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+}
+.team-items {
+  width: calc((100% - 3 * 24px) / 4);
+
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.team-items-images {
+  margin-bottom: 32px;
+}
+
+.container-title-text {
+  padding: 32px 0;
+}
+.team-items-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.team-items-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* #endregion Team 3*/
+
+/* #region Portfolio 4*/
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  text-align: center;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-items {
+  min-width: 360px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.portfolio-img {
+  margin-bottom: 32px;
+}
+.container-text-title {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+.portfolio-items-title {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-items-text {
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* #endregion Portfolio 4*/
+
+/* #endregion Main */
+
+/* #region Footer 5*/
+
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-web {
+  display: inline-block;
+  margin-bottom: 16px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.footer-studio {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  margin: 0;
+  max-width: 264px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+/* #endregion Footer 5*/
