@@ -163,7 +163,6 @@ img {
 
 .heroimage {
   padding: 188px 0;
-  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -176,6 +175,7 @@ img {
 }
 
 .heroimage .container {
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
