@@ -49,7 +49,7 @@ img {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .features,
@@ -145,8 +145,16 @@ img {
 /* #region Heroimage 1*/
 
 .heroimage {
-  background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image.jpg);
+  background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .heroimage .container {
@@ -197,8 +205,6 @@ img {
 
 .features {
   padding: 120px 0;
-}
-.features-title {
 }
 
 .features-items {
@@ -271,7 +277,6 @@ img {
 }
 
 .container-title-text {
-  padding: 32px 0;
 }
 .team-items-title {
   text-align: center;
@@ -292,6 +297,33 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.container-socials {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.socials-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  width: 232px;
+  height: 40px;
+}
+
+.socials-item-list {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #4d5ae5;
+}
+
+.socials-icons {
+  margin: 12px;
+  fill: #f4f4fd;
 }
 /* #endregion Team 3*/
 
@@ -362,11 +394,28 @@ img {
 
 /* #region Footer 5*/
 
+.footer .container {
+  display: flex;
+  gap: 24px;
+}
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
 
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+
+  width: 264px;
+  height: 112px;
+}
 .footer-web {
   display: inline-block;
   margin-bottom: 16px;
@@ -381,6 +430,32 @@ img {
   color: #4d5ae5;
 }
 
+.footer-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-socials {
+  fill: #fff;
+}
+.footer-items-link {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #4d5ae5;
+}
 .footer-studio {
   color: #f4f4fd;
 }
